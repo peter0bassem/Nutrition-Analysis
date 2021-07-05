@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D483E2A7A3122C6402CBB48 /* Pods_Nutrition_Analysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A899AAD210AE595429E010F /* Pods_Nutrition_Analysis.framework */; };
+		E09467D226906D1C007EFAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09467D126906D1C007EFAF9 /* AppDelegate.swift */; };
+		E09467D426906D1C007EFAF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09467D326906D1C007EFAF9 /* SceneDelegate.swift */; };
+		E09467DB26906D1E007EFAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09467DA26906D1E007EFAF9 /* Assets.xcassets */; };
+		E09467DE26906D1E007EFAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09467DC26906D1E007EFAF9 /* LaunchScreen.storyboard */; };
+		E0DF43E12692531B00D1D553 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43D82692531B00D1D553 /* BaseViewController.swift */; };
+		E0DF43E52692531B00D1D553 /* BaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43DC2692531B00D1D553 /* BaseProtocols.swift */; };
+		E0DF43E62692531B00D1D553 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43DD2692531B00D1D553 /* BasePresenter.swift */; };
+		E0DF43F32692541500D1D553 /* IngrediendsInputViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43EB2692541500D1D553 /* IngrediendsInputViewController+Delegates.swift */; };
+		E0DF43F42692541500D1D553 /* IngrediendsInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43EC2692541500D1D553 /* IngrediendsInputPresenter.swift */; };
+		E0DF43F52692541500D1D553 /* IngrediendsInputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43ED2692541500D1D553 /* IngrediendsInputRouter.swift */; };
+		E0DF43F72692541500D1D553 /* IngrediendsInputProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43EF2692541500D1D553 /* IngrediendsInputProtocols.swift */; };
+		E0DF43F82692541500D1D553 /* IngrediendsInputInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43F02692541500D1D553 /* IngrediendsInputInteractor.swift */; };
+		E0DF43FD2692543500D1D553 /* IngrediendsInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF43FB2692543500D1D553 /* IngrediendsInputViewController.swift */; };
+		E0DF43FE2692543500D1D553 /* IngrediendsInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0DF43FC2692543500D1D553 /* IngrediendsInputViewController.xib */; };
+		E0DF44262693066700D1D553 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44212693066700D1D553 /* APIConfiguration.swift */; };
+		E0DF44272693066700D1D553 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44222693066700D1D553 /* APIError.swift */; };
+		E0DF44282693066700D1D553 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44232693066700D1D553 /* APIClient.swift */; };
+		E0DF44292693066700D1D553 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44242693066700D1D553 /* APIResponse.swift */; };
+		E0DF442A2693066700D1D553 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44252693066700D1D553 /* NetworkConstants.swift */; };
+		E0DF4431269306DB00D1D553 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF4430269306DB00D1D553 /* NetworkManager.swift */; };
+		E0DF44342693079600D1D553 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44332693079600D1D553 /* Constants.swift */; };
+		E0DF443726930A8A00D1D553 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF443626930A8A00D1D553 /* UIViewExtensions.swift */; };
+		E0DF443A26930B1C00D1D553 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF443926930B1C00D1D553 /* CaptionTextView.swift */; };
+		E0DF443C26930D5000D1D553 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF443B26930D4F00D1D553 /* UIButtonExtensions.swift */; };
+		E0DF443E2693112000D1D553 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF443D2693112000D1D553 /* StringExtensions.swift */; };
+		E0DF44402693131800D1D553 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF443F2693131800D1D553 /* UIViewControllerExtensions.swift */; };
+		E0DF44442693172F00D1D553 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44432693172F00D1D553 /* APIRouter.swift */; };
+		E0DF4446269317AA00D1D553 /* HeaderInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF4445269317AA00D1D553 /* HeaderInterceptor.swift */; };
+		E0DF444B2693186F00D1D553 /* NurationDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF444A2693186F00D1D553 /* NurationDetailsRequest.swift */; };
+		E0DF444D2693193900D1D553 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF444C2693193900D1D553 /* EncodableExtensions.swift */; };
+		E0DF444F2693196900D1D553 /* NutritionDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF444E2693196900D1D553 /* NutritionDetailed.swift */; };
+		E0DF44542693198B00D1D553 /* TotalNutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44502693198B00D1D553 /* TotalNutrients.swift */; };
+		E0DF44552693198B00D1D553 /* TotalNutrientsKCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44512693198B00D1D553 /* TotalNutrientsKCal.swift */; };
+		E0DF44562693198B00D1D553 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44522693198B00D1D553 /* Ingredients.swift */; };
+		E0DF44572693198B00D1D553 /* TotalDaily.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44532693198B00D1D553 /* TotalDaily.swift */; };
+		E0DF445B269319B100D1D553 /* NutrientQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF4458269319B000D1D553 /* NutrientQuantity.swift */; };
+		E0DF445C269319B100D1D553 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF4459269319B000D1D553 /* Parsed.swift */; };
+		E0DF445D269319B100D1D553 /* Nutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF445A269319B000D1D553 /* Nutrients.swift */; };
+		E0DF446026931AB800D1D553 /* NutrationAnalysisUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF445F26931AB800D1D553 /* NutrationAnalysisUseCase.swift */; };
+		E0DF446326931B5C00D1D553 /* NurationDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF446226931B5C00D1D553 /* NurationDetailsRepository.swift */; };
+		E0DF446626931BCC00D1D553 /* NurationDetailsRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF446526931BCC00D1D553 /* NurationDetailsRepositoryImp.swift */; };
+		E0DF446926931BFE00D1D553 /* RemoteNurationDetailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF446826931BFE00D1D553 /* RemoteNurationDetailsDataSource.swift */; };
+		E0DF448D2693225500D1D553 /* NutritionAnalysisViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44852693225500D1D553 /* NutritionAnalysisViewController+Delegates.swift */; };
+		E0DF448E2693225500D1D553 /* NutritionAnalysisPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44862693225500D1D553 /* NutritionAnalysisPresenter.swift */; };
+		E0DF448F2693225500D1D553 /* NutritionAnalysisRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44872693225500D1D553 /* NutritionAnalysisRouter.swift */; };
+		E0DF44912693225500D1D553 /* NutritionAnalysisProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44892693225500D1D553 /* NutritionAnalysisProtocols.swift */; };
+		E0DF44922693225500D1D553 /* NutritionAnalysisInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF448A2693225500D1D553 /* NutritionAnalysisInteractor.swift */; };
+		E0DF44972693226E00D1D553 /* NutritionAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF44952693226E00D1D553 /* NutritionAnalysisViewController.swift */; };
+		E0DF44982693226E00D1D553 /* NutritionAnalysisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0DF44962693226E00D1D553 /* NutritionAnalysisViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A97F60F9CD87E42474906DD /* Pods-Nutrition Analysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition Analysis.debug.xcconfig"; path = "Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis.debug.xcconfig"; sourceTree = "<group>"; };
+		6669A560FFBAABDB21253475 /* Pods-Nutrition Analysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition Analysis.release.xcconfig"; path = "Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis.release.xcconfig"; sourceTree = "<group>"; };
+		9A899AAD210AE595429E010F /* Pods_Nutrition_Analysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrition_Analysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09467CE26906D1C007EFAF9 /* Nutrition Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nutrition Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09467D126906D1C007EFAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E09467D326906D1C007EFAF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E09467DA26906D1E007EFAF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E09467DD26906D1E007EFAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E09467DF26906D1E007EFAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DF43D82692531B00D1D553 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E0DF43DC2692531B00D1D553 /* BaseProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocols.swift; sourceTree = "<group>"; };
+		E0DF43DD2692531B00D1D553 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		E0DF43EB2692541500D1D553 /* IngrediendsInputViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IngrediendsInputViewController+Delegates.swift"; sourceTree = "<group>"; };
+		E0DF43EC2692541500D1D553 /* IngrediendsInputPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngrediendsInputPresenter.swift; sourceTree = "<group>"; };
+		E0DF43ED2692541500D1D553 /* IngrediendsInputRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngrediendsInputRouter.swift; sourceTree = "<group>"; };
+		E0DF43EF2692541500D1D553 /* IngrediendsInputProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngrediendsInputProtocols.swift; sourceTree = "<group>"; };
+		E0DF43F02692541500D1D553 /* IngrediendsInputInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngrediendsInputInteractor.swift; sourceTree = "<group>"; };
+		E0DF43FB2692543500D1D553 /* IngrediendsInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngrediendsInputViewController.swift; sourceTree = "<group>"; };
+		E0DF43FC2692543500D1D553 /* IngrediendsInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngrediendsInputViewController.xib; sourceTree = "<group>"; };
+		E0DF44212693066700D1D553 /* APIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		E0DF44222693066700D1D553 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		E0DF44232693066700D1D553 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E0DF44242693066700D1D553 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		E0DF44252693066700D1D553 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		E0DF4430269306DB00D1D553 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E0DF44332693079600D1D553 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E0DF443626930A8A00D1D553 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		E0DF443926930B1C00D1D553 /* CaptionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
+		E0DF443B26930D4F00D1D553 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		E0DF443D2693112000D1D553 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		E0DF443F2693131800D1D553 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		E0DF44432693172F00D1D553 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		E0DF4445269317AA00D1D553 /* HeaderInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderInterceptor.swift; sourceTree = "<group>"; };
+		E0DF444A2693186F00D1D553 /* NurationDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurationDetailsRequest.swift; sourceTree = "<group>"; };
+		E0DF444C2693193900D1D553 /* EncodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
+		E0DF444E2693196900D1D553 /* NutritionDetailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionDetailed.swift; sourceTree = "<group>"; };
+		E0DF44502693198B00D1D553 /* TotalNutrients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalNutrients.swift; sourceTree = "<group>"; };
+		E0DF44512693198B00D1D553 /* TotalNutrientsKCal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalNutrientsKCal.swift; sourceTree = "<group>"; };
+		E0DF44522693198B00D1D553 /* Ingredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		E0DF44532693198B00D1D553 /* TotalDaily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalDaily.swift; sourceTree = "<group>"; };
+		E0DF4458269319B000D1D553 /* NutrientQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutrientQuantity.swift; sourceTree = "<group>"; };
+		E0DF4459269319B000D1D553 /* Parsed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
+		E0DF445A269319B000D1D553 /* Nutrients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nutrients.swift; sourceTree = "<group>"; };
+		E0DF445F26931AB800D1D553 /* NutrationAnalysisUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrationAnalysisUseCase.swift; sourceTree = "<group>"; };
+		E0DF446226931B5C00D1D553 /* NurationDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurationDetailsRepository.swift; sourceTree = "<group>"; };
+		E0DF446526931BCC00D1D553 /* NurationDetailsRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurationDetailsRepositoryImp.swift; sourceTree = "<group>"; };
+		E0DF446826931BFE00D1D553 /* RemoteNurationDetailsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNurationDetailsDataSource.swift; sourceTree = "<group>"; };
+		E0DF44852693225500D1D553 /* NutritionAnalysisViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NutritionAnalysisViewController+Delegates.swift"; sourceTree = "<group>"; };
+		E0DF44862693225500D1D553 /* NutritionAnalysisPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisPresenter.swift; sourceTree = "<group>"; };
+		E0DF44872693225500D1D553 /* NutritionAnalysisRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisRouter.swift; sourceTree = "<group>"; };
+		E0DF44892693225500D1D553 /* NutritionAnalysisProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisProtocols.swift; sourceTree = "<group>"; };
+		E0DF448A2693225500D1D553 /* NutritionAnalysisInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisInteractor.swift; sourceTree = "<group>"; };
+		E0DF44952693226E00D1D553 /* NutritionAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisViewController.swift; sourceTree = "<group>"; };
+		E0DF44962693226E00D1D553 /* NutritionAnalysisViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionAnalysisViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E09467CB26906D1B007EFAF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D483E2A7A3122C6402CBB48 /* Pods_Nutrition_Analysis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16B629C9F1BF602198522D99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A899AAD210AE595429E010F /* Pods_Nutrition_Analysis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F32BFC1C78BBA84CCDCBDBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A97F60F9CD87E42474906DD /* Pods-Nutrition Analysis.debug.xcconfig */,
+				6669A560FFBAABDB21253475 /* Pods-Nutrition Analysis.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E09467C526906D1B007EFAF9 = {
+			isa = PBXGroup;
+			children = (
+				E09467D026906D1C007EFAF9 /* Nutrition Analysis */,
+				E09467CF26906D1C007EFAF9 /* Products */,
+				1F32BFC1C78BBA84CCDCBDBB /* Pods */,
+				16B629C9F1BF602198522D99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E09467CF26906D1C007EFAF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E09467CE26906D1C007EFAF9 /* Nutrition Analysis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E09467D026906D1C007EFAF9 /* Nutrition Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				E09467E726907C4F007EFAF9 /* Configuration */,
+				E09467E626907C4E007EFAF9 /* Core */,
+				E0DF43D62692531B00D1D553 /* BaseParents */,
+				E09467E526907C4D007EFAF9 /* Resources */,
+				E0DF44322693078200D1D553 /* Helpers */,
+				E0DF442C2693069800D1D553 /* Domain */,
+				E0DF442B2693069500D1D553 /* Data */,
+				E0DF43E9269253ED00D1D553 /* Screens */,
+			);
+			path = "Nutrition Analysis";
+			sourceTree = "<group>";
+		};
+		E09467E526907C4D007EFAF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E09467DC26906D1E007EFAF9 /* LaunchScreen.storyboard */,
+				E09467DA26906D1E007EFAF9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E09467E626907C4E007EFAF9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E09467D126906D1C007EFAF9 /* AppDelegate.swift */,
+				E09467D326906D1C007EFAF9 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E09467E726907C4F007EFAF9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E09467DF26906D1E007EFAF9 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E0DF43D62692531B00D1D553 /* BaseParents */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF43D82692531B00D1D553 /* BaseViewController.swift */,
+				E0DF43DC2692531B00D1D553 /* BaseProtocols.swift */,
+				E0DF43DD2692531B00D1D553 /* BasePresenter.swift */,
+			);
+			path = BaseParents;
+			sourceTree = "<group>";
+		};
+		E0DF43E9269253ED00D1D553 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF43EA269253F800D1D553 /* IngrediendsInput */,
+				E0DF44842693223E00D1D553 /* NutritionAnalysis */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E0DF43EA269253F800D1D553 /* IngrediendsInput */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44042692544B00D1D553 /* Nib */,
+				E0DF44032692544A00D1D553 /* View */,
+				E0DF44022692544900D1D553 /* Presenter */,
+				E0DF44012692544800D1D553 /* Interactor */,
+				E0DF44002692544700D1D553 /* Router */,
+			);
+			path = IngrediendsInput;
+			sourceTree = "<group>";
+		};
+		E0DF44002692544700D1D553 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF43ED2692541500D1D553 /* IngrediendsInputRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E0DF44012692544800D1D553 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF43F02692541500D1D553 /* IngrediendsInputInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E0DF44022692544900D1D553 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF43EF2692541500D1D553 /* IngrediendsInputProtocols.swift */,
+				E0DF43EC2692541500D1D553 /* IngrediendsInputPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E0DF44032692544A00D1D553 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF43FB2692543500D1D553 /* IngrediendsInputViewController.swift */,
+				E0DF43EB2692541500D1D553 /* IngrediendsInputViewController+Delegates.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0DF44042692544B00D1D553 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF43FC2692543500D1D553 /* IngrediendsInputViewController.xib */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		E0DF44202693066700D1D553 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44212693066700D1D553 /* APIConfiguration.swift */,
+				E0DF44222693066700D1D553 /* APIError.swift */,
+				E0DF44232693066700D1D553 /* APIClient.swift */,
+				E0DF44242693066700D1D553 /* APIResponse.swift */,
+				E0DF44252693066700D1D553 /* NetworkConstants.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		E0DF442B2693069500D1D553 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF442D269306B400D1D553 /* Manager */,
+				E0DF44412693170D00D1D553 /* Remote */,
+				E0DF446426931BB600D1D553 /* Repositories Implementation */,
+				E0DF446726931BE200D1D553 /* Remote Data Source */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E0DF442C2693069800D1D553 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF446126931B4800D1D553 /* Repositories */,
+				E0DF445E26931A8600D1D553 /* Use Cases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E0DF442D269306B400D1D553 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF442E269306B900D1D553 /* Network */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E0DF442E269306B900D1D553 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF442F269306BB00D1D553 /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E0DF442F269306BB00D1D553 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF4430269306DB00D1D553 /* NetworkManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E0DF44322693078200D1D553 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44202693066700D1D553 /* NetworkLayer */,
+				E0DF443526930A7A00D1D553 /* Extensions */,
+				E0DF443826930B0900D1D553 /* CustomViews */,
+				E0DF44332693079600D1D553 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E0DF443526930A7A00D1D553 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF443626930A8A00D1D553 /* UIViewExtensions.swift */,
+				E0DF443B26930D4F00D1D553 /* UIButtonExtensions.swift */,
+				E0DF443D2693112000D1D553 /* StringExtensions.swift */,
+				E0DF443F2693131800D1D553 /* UIViewControllerExtensions.swift */,
+				E0DF444C2693193900D1D553 /* EncodableExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0DF443826930B0900D1D553 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF443926930B1C00D1D553 /* CaptionTextView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E0DF44412693170D00D1D553 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44422693171D00D1D553 /* API */,
+				E0DF44492693184300D1D553 /* Requests */,
+				E0DF44472693184000D1D553 /* Responses */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		E0DF44422693171D00D1D553 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44432693172F00D1D553 /* APIRouter.swift */,
+				E0DF4445269317AA00D1D553 /* HeaderInterceptor.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E0DF44472693184000D1D553 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF444E2693196900D1D553 /* NutritionDetailed.swift */,
+				E0DF44522693198B00D1D553 /* Ingredients.swift */,
+				E0DF44532693198B00D1D553 /* TotalDaily.swift */,
+				E0DF44502693198B00D1D553 /* TotalNutrients.swift */,
+				E0DF44512693198B00D1D553 /* TotalNutrientsKCal.swift */,
+				E0DF4458269319B000D1D553 /* NutrientQuantity.swift */,
+				E0DF445A269319B000D1D553 /* Nutrients.swift */,
+				E0DF4459269319B000D1D553 /* Parsed.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		E0DF44492693184300D1D553 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF444A2693186F00D1D553 /* NurationDetailsRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E0DF445E26931A8600D1D553 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF445F26931AB800D1D553 /* NutrationAnalysisUseCase.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		E0DF446126931B4800D1D553 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF446226931B5C00D1D553 /* NurationDetailsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E0DF446426931BB600D1D553 /* Repositories Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF446526931BCC00D1D553 /* NurationDetailsRepositoryImp.swift */,
+			);
+			path = "Repositories Implementation";
+			sourceTree = "<group>";
+		};
+		E0DF446726931BE200D1D553 /* Remote Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF446826931BFE00D1D553 /* RemoteNurationDetailsDataSource.swift */,
+			);
+			path = "Remote Data Source";
+			sourceTree = "<group>";
+		};
+		E0DF44842693223E00D1D553 /* NutritionAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF449D269322B700D1D553 /* Nib */,
+				E0DF449C269322B600D1D553 /* View */,
+				E0DF449B269322B500D1D553 /* Presenter */,
+				E0DF449A269322B500D1D553 /* Interactor */,
+				E0DF4499269322B400D1D553 /* Router */,
+			);
+			path = NutritionAnalysis;
+			sourceTree = "<group>";
+		};
+		E0DF4499269322B400D1D553 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44872693225500D1D553 /* NutritionAnalysisRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E0DF449A269322B500D1D553 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF448A2693225500D1D553 /* NutritionAnalysisInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E0DF449B269322B500D1D553 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44892693225500D1D553 /* NutritionAnalysisProtocols.swift */,
+				E0DF44862693225500D1D553 /* NutritionAnalysisPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E0DF449C269322B600D1D553 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44952693226E00D1D553 /* NutritionAnalysisViewController.swift */,
+				E0DF44852693225500D1D553 /* NutritionAnalysisViewController+Delegates.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0DF449D269322B700D1D553 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF44962693226E00D1D553 /* NutritionAnalysisViewController.xib */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E09467CD26906D1B007EFAF9 /* Nutrition Analysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E09467E226906D1E007EFAF9 /* Build configuration list for PBXNativeTarget "Nutrition Analysis" */;
+			buildPhases = (
+				6196478858712DC2E42CB68E /* [CP] Check Pods Manifest.lock */,
+				E09467CA26906D1B007EFAF9 /* Sources */,
+				E09467CB26906D1B007EFAF9 /* Frameworks */,
+				E09467CC26906D1B007EFAF9 /* Resources */,
+				CE3CD1ED4A45F326B8B4DC67 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nutrition Analysis";
+			productName = "Nutrition Analysis";
+			productReference = E09467CE26906D1C007EFAF9 /* Nutrition Analysis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E09467C626906D1B007EFAF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E09467CD26906D1B007EFAF9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = E09467C926906D1B007EFAF9 /* Build configuration list for PBXProject "Nutrition Analysis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E09467C526906D1B007EFAF9;
+			productRefGroup = E09467CF26906D1C007EFAF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E09467CD26906D1B007EFAF9 /* Nutrition Analysis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E09467CC26906D1B007EFAF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09467DE26906D1E007EFAF9 /* LaunchScreen.storyboard in Resources */,
+				E09467DB26906D1E007EFAF9 /* Assets.xcassets in Resources */,
+				E0DF43FE2692543500D1D553 /* IngrediendsInputViewController.xib in Resources */,
+				E0DF44982693226E00D1D553 /* NutritionAnalysisViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6196478858712DC2E42CB68E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nutrition Analysis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3CD1ED4A45F326B8B4DC67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E09467CA26906D1B007EFAF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DF44552693198B00D1D553 /* TotalNutrientsKCal.swift in Sources */,
+				E0DF4431269306DB00D1D553 /* NetworkManager.swift in Sources */,
+				E0DF44442693172F00D1D553 /* APIRouter.swift in Sources */,
+				E0DF444B2693186F00D1D553 /* NurationDetailsRequest.swift in Sources */,
+				E0DF446326931B5C00D1D553 /* NurationDetailsRepository.swift in Sources */,
+				E0DF446926931BFE00D1D553 /* RemoteNurationDetailsDataSource.swift in Sources */,
+				E0DF44342693079600D1D553 /* Constants.swift in Sources */,
+				E0DF43F72692541500D1D553 /* IngrediendsInputProtocols.swift in Sources */,
+				E0DF43E12692531B00D1D553 /* BaseViewController.swift in Sources */,
+				E0DF43FD2692543500D1D553 /* IngrediendsInputViewController.swift in Sources */,
+				E0DF44572693198B00D1D553 /* TotalDaily.swift in Sources */,
+				E0DF44562693198B00D1D553 /* Ingredients.swift in Sources */,
+				E0DF445D269319B100D1D553 /* Nutrients.swift in Sources */,
+				E0DF43E62692531B00D1D553 /* BasePresenter.swift in Sources */,
+				E0DF446026931AB800D1D553 /* NutrationAnalysisUseCase.swift in Sources */,
+				E0DF443726930A8A00D1D553 /* UIViewExtensions.swift in Sources */,
+				E0DF4446269317AA00D1D553 /* HeaderInterceptor.swift in Sources */,
+				E0DF448F2693225500D1D553 /* NutritionAnalysisRouter.swift in Sources */,
+				E0DF446626931BCC00D1D553 /* NurationDetailsRepositoryImp.swift in Sources */,
+				E0DF44922693225500D1D553 /* NutritionAnalysisInteractor.swift in Sources */,
+				E0DF44912693225500D1D553 /* NutritionAnalysisProtocols.swift in Sources */,
+				E0DF444F2693196900D1D553 /* NutritionDetailed.swift in Sources */,
+				E0DF43F82692541500D1D553 /* IngrediendsInputInteractor.swift in Sources */,
+				E0DF44292693066700D1D553 /* APIResponse.swift in Sources */,
+				E0DF444D2693193900D1D553 /* EncodableExtensions.swift in Sources */,
+				E09467D226906D1C007EFAF9 /* AppDelegate.swift in Sources */,
+				E0DF43F32692541500D1D553 /* IngrediendsInputViewController+Delegates.swift in Sources */,
+				E0DF443E2693112000D1D553 /* StringExtensions.swift in Sources */,
+				E0DF443A26930B1C00D1D553 /* CaptionTextView.swift in Sources */,
+				E0DF44972693226E00D1D553 /* NutritionAnalysisViewController.swift in Sources */,
+				E0DF44282693066700D1D553 /* APIClient.swift in Sources */,
+				E09467D426906D1C007EFAF9 /* SceneDelegate.swift in Sources */,
+				E0DF44402693131800D1D553 /* UIViewControllerExtensions.swift in Sources */,
+				E0DF448E2693225500D1D553 /* NutritionAnalysisPresenter.swift in Sources */,
+				E0DF44262693066700D1D553 /* APIConfiguration.swift in Sources */,
+				E0DF43F42692541500D1D553 /* IngrediendsInputPresenter.swift in Sources */,
+				E0DF445C269319B100D1D553 /* Parsed.swift in Sources */,
+				E0DF443C26930D5000D1D553 /* UIButtonExtensions.swift in Sources */,
+				E0DF43E52692531B00D1D553 /* BaseProtocols.swift in Sources */,
+				E0DF448D2693225500D1D553 /* NutritionAnalysisViewController+Delegates.swift in Sources */,
+				E0DF43F52692541500D1D553 /* IngrediendsInputRouter.swift in Sources */,
+				E0DF442A2693066700D1D553 /* NetworkConstants.swift in Sources */,
+				E0DF44272693066700D1D553 /* APIError.swift in Sources */,
+				E0DF44542693198B00D1D553 /* TotalNutrients.swift in Sources */,
+				E0DF445B269319B100D1D553 /* NutrientQuantity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E09467DC26906D1E007EFAF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E09467DD26906D1E007EFAF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E09467E026906D1E007EFAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E09467E126906D1E007EFAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E09467E326906D1E007EFAF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A97F60F9CD87E42474906DD /* Pods-Nutrition Analysis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V9A3KLB32;
+				INFOPLIST_FILE = "$(SRCROOT)/Nutrition Analysis/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-bassem.Nutrition-Analysis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E09467E426906D1E007EFAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6669A560FFBAABDB21253475 /* Pods-Nutrition Analysis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V9A3KLB32;
+				INFOPLIST_FILE = "$(SRCROOT)/Nutrition Analysis/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-bassem.Nutrition-Analysis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E09467C926906D1B007EFAF9 /* Build configuration list for PBXProject "Nutrition Analysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09467E026906D1E007EFAF9 /* Debug */,
+				E09467E126906D1E007EFAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E09467E226906D1E007EFAF9 /* Build configuration list for PBXNativeTarget "Nutrition Analysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09467E326906D1E007EFAF9 /* Debug */,
+				E09467E426906D1E007EFAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E09467C626906D1B007EFAF9 /* Project object */;
+}
